@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://thetimeofblack.github.io">
-  <title>LeetCode 37 | Technique Blog</title>
+  <title>Study Note for Hadoop | Technique Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="prerequisite knowledgeBacktracking is an algorithmic-technique for solving problems recursivelyby trying to build a solution incrementally, one piece at a time, removing those solutionsthat fail to sa">
+  <meta name="description" content="problemnetwork connection for the vitual box## #">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 37">
-<meta property="og:url" content="https://thetimeofblack.github.io/2019/05/08/LeetCode37/index.html">
+<meta property="og:title" content="Study Note for Hadoop">
+<meta property="og:url" content="https://thetimeofblack.github.io/2019/05/10/Hadoop Study Note/index.html">
 <meta property="og:site_name" content="Technique Blog">
-<meta property="og:description" content="prerequisite knowledgeBacktracking is an algorithmic-technique for solving problems recursivelyby trying to build a solution incrementally, one piece at a time, removing those solutionsthat fail to sa">
+<meta property="og:description" content="problemnetwork connection for the vitual box## #">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-08T21:12:44.147Z">
+<meta property="og:updated_time" content="2019-05-10T19:11:25.955Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode 37">
-<meta name="twitter:description" content="prerequisite knowledgeBacktracking is an algorithmic-technique for solving problems recursivelyby trying to build a solution incrementally, one piece at a time, removing those solutionsthat fail to sa">
+<meta name="twitter:title" content="Study Note for Hadoop">
+<meta name="twitter:description" content="problemnetwork connection for the vitual box## #">
   
     <link rel="alternative" href="/atom.xml" title="Technique Blog" type="application/atom+xml">
   
@@ -154,29 +154,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-LeetCode37" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Hadoop Study Note" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode 37
+      Study Note for Hadoop
     </h1>
   
 
         
-        <a href="/2019/05/08/LeetCode37/" class="archive-article-date">
-  	<time datetime="2019-05-08T20:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-08</time>
+        <a href="/2019/05/10/Hadoop Study Note/" class="archive-article-date">
+  	<time datetime="2019-05-10T19:09:37.828Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="prerequisite-knowledge"><a href="#prerequisite-knowledge" class="headerlink" title="prerequisite knowledge"></a>prerequisite knowledge</h2><p>Backtracking is an algorithmic-technique for solving problems recursively<br>by trying to build a solution incrementally, one piece at a time, removing those solutions<br>that fail to satisfy the constraints of the problem<br>at any point of time (by time, here, is referred to<br>the time elapsed till reaching any level of the search tree)</p>
-<h2 id="illustration-for-the-code"><a href="#illustration-for-the-code" class="headerlink" title="illustration for the code"></a>illustration for the code</h2><p>the function to implement the backtracking algorithm must<br>return value, so it is necessary to construct new solve function.<br>we uses the position from 1 to 80 to locate the value of board.<br>grid for the board is computed by the module and divisor of the row and column<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">class LeetCode37&#123;</span><br><span class="line">	public static void solveSudoku(char[][] board)&#123;</span><br><span class="line">			solve(board,0); </span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public static boolean solve(char[][] board, int position)&#123;</span><br><span class="line">		if(position==81) return true; </span><br><span class="line">		int row = position/9 ; </span><br><span class="line">		int col = position%9 ; </span><br><span class="line">		if(board[row][col]==&apos;.&apos;)&#123;</span><br><span class="line">			for(int i = 1 ; i&lt;=9 ;i++)&#123;</span><br><span class="line">				board[row][col] =(char) (i+48); </span><br><span class="line">				if(validate(board,position))&#123;</span><br><span class="line">					//board[row][col] =(char) (i+48); </span><br><span class="line">					if(solve(board,position+1)) &#123;</span><br><span class="line">						</span><br><span class="line">					    //System.out.println(&quot;position &quot;+position+&quot;character &quot;+board[row][col]);</span><br><span class="line">				</span><br><span class="line">						return true; </span><br><span class="line">					&#125;</span><br><span class="line">					board[row][col] = &apos;.&apos;; </span><br><span class="line">				&#125;//System.out.println(&quot;position &quot;+position+&quot;character &quot;+board[row][col]);</span><br><span class="line">				else&#123;</span><br><span class="line">						board[row][col] = &apos;.&apos;; </span><br><span class="line">						//System.out.println(&quot;position &quot;+position+&quot;character &quot;+board[row][col]);	</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			if(solve(board,position+1)) return true;  </span><br><span class="line">		&#125;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public static boolean validate(char[][] board , int position)&#123;</span><br><span class="line">			int row = position/9; </span><br><span class="line">			int col = position%9;</span><br><span class="line">			int gridx = row/3*3; </span><br><span class="line">			int gridy = col/3*3; </span><br><span class="line">			for(int i= 0 ;i&lt;9 ;i++)&#123;</span><br><span class="line">				//System.out.println(&quot;The row is &quot;+ row + &quot;The col is &quot;+ col + &quot;The value is&quot;+ board[row][col]);</span><br><span class="line">				if(i!=col&amp;&amp;board[row][i]==board[row][col]) return false;</span><br><span class="line">				if(i!=row&amp;&amp;board[i][col]==board[row][col]) return false;</span><br><span class="line">				int x = i/3; </span><br><span class="line">				int y = i%3;</span><br><span class="line">				x += gridx ; </span><br><span class="line">				y += gridy ; </span><br><span class="line">				if((row!=x)&amp;&amp;(col!=y)&amp;&amp;(board[row][col]==board[x][y])) return false;</span><br><span class="line">			&#125;</span><br><span class="line">			//System.out.println(&quot;The row is &quot;+ row + &quot;The column is &quot;+col+ &quot;The b is&quot; +board[row][col]);</span><br><span class="line">			return true; </span><br><span class="line">	&#125;</span><br><span class="line">	public static void main(String[] args)&#123;</span><br><span class="line">		char[][] b1 = &#123;&#123;&apos;5&apos;,&apos;3&apos;,&apos;.&apos;,&apos;.&apos;,&apos;7&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;&#125;,</span><br><span class="line">					   &#123;&apos;6&apos;,&apos;.&apos;,&apos;.&apos;,&apos;1&apos;,&apos;9&apos;,&apos;5&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;&#125;,</span><br><span class="line">					   &#123;&apos;.&apos;,&apos;9&apos;,&apos;8&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;6&apos;,&apos;.&apos;&#125;,</span><br><span class="line">					   &#123;&apos;8&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;6&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;3&apos;&#125;,</span><br><span class="line">					   &#123;&apos;4&apos;,&apos;.&apos;,&apos;.&apos;,&apos;8&apos;,&apos;.&apos;,&apos;3&apos;,&apos;.&apos;,&apos;.&apos;,&apos;1&apos;&#125;,</span><br><span class="line">					   &#123;&apos;7&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;2&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;6&apos;&#125;,</span><br><span class="line">					   &#123;&apos;.&apos;,&apos;6&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;2&apos;,&apos;8&apos;,&apos;.&apos;&#125;,</span><br><span class="line">					   &#123;&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;4&apos;,&apos;1&apos;,&apos;9&apos;,&apos;.&apos;,&apos;.&apos;,&apos;5&apos;&#125;,</span><br><span class="line">					   &#123;&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;.&apos;,&apos;8&apos;,&apos;.&apos;,&apos;.&apos;,&apos;7&apos;,&apos;9&apos;&#125;</span><br><span class="line">					  &#125;;</span><br><span class="line">		solveSudoku(b1);</span><br><span class="line">		for(int i= 0 ;i&lt;9 ;i++)&#123;</span><br><span class="line">			for(int j= 0 ; j&lt;9 ;j++)&#123;</span><br><span class="line">				System.out.print(b1[i][j]+&quot; &quot;); </span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(); </span><br><span class="line">		&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+        <hr>
+<h1 id="problem"><a href="#problem" class="headerlink" title="problem"></a>problem</h1><h2 id="network-connection-for-the-vitual-box"><a href="#network-connection-for-the-vitual-box" class="headerlink" title="network connection for the vitual box"></a>network connection for the vitual box</h2><p>##</p>
+<h2 id><a href="#" class="headerlink" title="# "></a># </h2>
       
 
       
@@ -255,7 +255,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://thetimeofblack.github.io/2019/05/08/LeetCode37/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://thetimeofblack.github.io/2019/05/10/Hadoop Study Note/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -269,18 +269,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/10/Hadoop Study Note/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Study Note for Hadoop
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/03/LeetCode8/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">LeetCode problem 8</div>
+    <a href="/2019/05/08/LeetCode37/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode 37</div>
       <i class="icon-circle-right"></i>
     </a>
   
