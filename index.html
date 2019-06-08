@@ -152,6 +152,92 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-System Design" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/08/System Design/">System Design Note</a>
+    </h1>
+  
+
+        
+        <a href="/2019/06/08/System Design/" class="archive-article-date">
+  	<time datetime="2019-06-08T09:43:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Requirements-and-Goals-of-the-System"><a href="#Requirements-and-Goals-of-the-System" class="headerlink" title="Requirements and Goals of the System"></a>Requirements and Goals of the System</h2><h3 id="Functional-Requirement"><a href="#Functional-Requirement" class="headerlink" title="Functional Requirement"></a>Functional Requirement</h3><p>describe the requirement of basic functions you want to initialize. In details, what kind of information or data should be displayed to the user.<br>Users can use this software to achieve which kind of goal.   </p>
+<h3 id="non-Functional-Requirement"><a href="#non-Functional-Requirement" class="headerlink" title="non-Functional Requirement"></a>non-Functional Requirement</h3><p>The time requirement for system running should be described. The latent possible requirement should be described for system to process the input data </p>
+<h3 id="Extended-Requirements"><a href="#Extended-Requirements" class="headerlink" title="Extended Requirements"></a>Extended Requirements</h3><p>Advaced development requirement should be described. </p>
+<h2 id="Capacity-Estimation-and-Constraints"><a href="#Capacity-Estimation-and-Constraints" class="headerlink" title="Capacity Estimation and Constraints"></a>Capacity Estimation and Constraints</h2><h3 id="Traffic-estimates"><a href="#Traffic-estimates" class="headerlink" title="Traffic estimates"></a>Traffic estimates</h3><p>How many requirements should software process in one time from several or many clients. </p>
+<h3 id="Storage-estimates"><a href="#Storage-estimates" class="headerlink" title="Storage estimates"></a>Storage estimates</h3><p>the total storage calculation for all data </p>
+<h3 id="Bandwidth-estimates"><a href="#Bandwidth-estimates" class="headerlink" title="Bandwidth estimates"></a>Bandwidth estimates</h3><h3 id="Memory-estimates"><a href="#Memory-estimates" class="headerlink" title="Memory estimates"></a>Memory estimates</h3><h3 id="High-level-estimates"><a href="#High-level-estimates" class="headerlink" title="High level estimates"></a>High level estimates</h3><h2 id="System-APIs"><a href="#System-APIs" class="headerlink" title="System APIs"></a>System APIs</h2><p>The function name, parameters and return value should be detailed. </p>
+<h2 id="Database-Design"><a href="#Database-Design" class="headerlink" title="Database Design"></a>Database Design</h2><p>we should decide the database schema and what kind of database we should use</p>
+<h2 id="Basic-System-Design-and-Algorithm"><a href="#Basic-System-Design-and-Algorithm" class="headerlink" title="Basic System Design and Algorithm"></a>Basic System Design and Algorithm</h2><p>the specific procedure design for handling input data. </p>
+<h2 id="Data-Partitioning-and-Replication"><a href="#Data-Partitioning-and-Replication" class="headerlink" title="Data Partitioning and Replication"></a>Data Partitioning and Replication</h2><p>There are many data which should be stored into the database. It overloads the database storage if the database contains too much data. The partition can be used to seperate the data set for storing the information. There are two basic strategies for storing the data. They are Ranged Based Partitioning and Hash-Based Partitioning. </p>
+<h2 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h2><h2 id="Load-Balancer-LB"><a href="#Load-Balancer-LB" class="headerlink" title="Load Balancer (LB)"></a>Load Balancer (LB)</h2><h2 id="Purging-or-DB-cleanup"><a href="#Purging-or-DB-cleanup" class="headerlink" title="Purging or DB cleanup"></a>Purging or DB cleanup</h2><h2 id="Telemetry"><a href="#Telemetry" class="headerlink" title="Telemetry"></a>Telemetry</h2><h2 id="Security-and-Permissions"><a href="#Security-and-Permissions" class="headerlink" title="Security and Permissions"></a>Security and Permissions</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Software Engineering</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Note</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/08/System Design/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Hadoop Study Note" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -649,6 +735,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Software Engineering</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Note</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
